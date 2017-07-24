@@ -12,34 +12,42 @@ block custom-style
   else
     link(href="/styles/css/custom.css" rel='stylesheet' type='text/css')
 block main-content
-  include offcanvas-cart
   .row.addon-row.addon-row-attached
     .col-sm-12
       .page-header
         h1 Find a non-profit
+    include offcanvas-cart
   .row.addon-row.addon-row-attached
-    .col-sm-8
+    .col-sm-12.col-md-8
+      p.h5 CURRENT FUNDRAISING EVENTS
       .row
-        .col-sm-6
-          p 
-            a(href="#") General donations
-        .col-sm-6
-          p 
-            a(href="#") Northwest Harvest food drive
-        .col-sm-6
-          p 
-            a(href="#") Veterans relief drive
-        .col-sm-6
-          p
-            a(href="#") Bob Smith retirement party
-      h2 
-        span General donations
-      p 
-        a(href="#" data-toggle="modal" data-target="#paymentTypesModal") What are my payment options?
-      include paymentsModal
+        .col-sm-6.col-xs-12
+          p(style="border: 1px solid blue; padding: 5px 10px; margin-bottom:0 ") 
+            | General donations
+            span.fa.fa-info-circle.pull-right(style="padding-top: 2px")
+        .col-sm-6.col-xs-12
+          p(style="border: 1px solid blue; padding: 5px 10px; margin-bottom:0") 
+            |  Northwest Harvest food drive
+            span.fa.fa-info-circle.pull-right(style="padding-top: 2px")
+        .col-sm-6.col-xs-12
+          p(style="border: 1px solid blue; padding: 5px 10px; margin-bottom:0")
+            | Veterans relief drive
+            span.fa.fa-info-circle.pull-right(style="padding-top: 2px")
+        .col-sm-6.col-xs-12
+          p(style="border: 1px solid blue; padding: 5px 10px; margin-bottom:0")
+            | Bob Smith retirement party
+            span.fa.fa-info-circle.pull-right(style="padding-top: 2px")
       .row
         .col-sm-12
-          include searchInput
+          .thumbnail(style="padding:0")
+            img(src="https://unsplash.it/750/116/?blur" class="img-rounded")
+            .caption
+              h2 
+                span General donations
+              p 
+                a(href="#" data-toggle="modal" data-target="#paymentTypesModal") What are my payment options?
+              include paymentsModal
+              include searchInput
           - var name = 'Abused Deaf Women\'s Advocacy Services';
           - var id = '9615';
           - var description = 'Women, Housing & Employment Mental Health, Disablities & Substance abuse';
