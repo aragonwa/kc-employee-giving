@@ -34,20 +34,18 @@ block main-content
       .row
         .col-sm-12
           include searchInput
-          .row
-            .col-sm-12
-              - var name = 'Abused Deaf Women\'s Advocacy Services';
-              - var id = '9615';
-              - var description = 'Women, Housing & Employment Mental Health, Disablities & Substance abuse';
-              include panels
-              - var name = 'Advocates for Success in Africa';
-              - var id = '9713';
-              - var description = 'Children & youth, International relief & development, Education & literacy';
-              include panels
-              - var name = 'African Wildlife Foundation';
-              - var id = '2506';
-              - var description = 'Environment Animals';
-              include panels
+          - var name = 'Abused Deaf Women\'s Advocacy Services';
+          - var id = '9615';
+          - var description = 'Women, Housing & Employment Mental Health, Disablities & Substance abuse';
+          include panels
+          - var name = 'Advocates for Success in Africa';
+          - var id = '9713';
+          - var description = 'Children & youth, International relief & development, Education & literacy';
+          include panels
+          - var name = 'African Wildlife Foundation';
+          - var id = '2506';
+          - var description = 'Environment Animals';
+          include panels
     .col-md-4.visible-md-block.visible-lg-block
       include cart
 block custom-js
