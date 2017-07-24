@@ -21,16 +21,22 @@ block main-content
     .col-sm-8
       .row
         .col-sm-6
-          p General donations
+          p 
+            a(href="#") General donations
         .col-sm-6
-          p Northwest Harvest food drive
+          p 
+            a(href="#") Northwest Harvest food drive
         .col-sm-6
-          p Veterans relief drive
+          p 
+            a(href="#") Veterans relief drive
         .col-sm-6
-          p Bob Smith retirement party
-      h2 General donations
+          p
+            a(href="#") Bob Smith retirement party
+      h2 
+        span General donations
       p 
-        a(href="#") What are my payment options?
+        a(href="#" data-toggle="modal" data-target="#paymentTypesModal") What are my payment options?
+      include paymentsModal
       .row
         .col-sm-12
           include searchInput
