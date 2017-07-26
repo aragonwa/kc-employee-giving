@@ -4,7 +4,6 @@ block whichtheme
 block isfullwidth
   - var colSize = 'col-md-12'
 block breadcrumb
-  // BREADCRUMB
   include includes/breadcrumb
 block custom-style
   if production
@@ -21,45 +20,109 @@ block main-content
     .col-sm-12.col-md-8
       p.h5 CURRENT FUNDRAISING EVENTS
       .row
-        .col-sm-6.col-xs-12
-          p(style="border: 1px solid blue; padding: 5px 10px; margin-bottom:0 ") 
-            | General donations
-            span.fa.fa-info-circle.pull-right(style="padding-top: 2px")
-        .col-sm-6.col-xs-12
-          p(style="border: 1px solid blue; padding: 5px 10px; margin-bottom:0") 
-            |  Northwest Harvest food drive
-            span.fa.fa-info-circle.pull-right(style="padding-top: 2px")
-        .col-sm-6.col-xs-12
-          p(style="border: 1px solid blue; padding: 5px 10px; margin-bottom:0")
-            | Veterans relief drive
-            span.fa.fa-info-circle.pull-right(style="padding-top: 2px")
-        .col-sm-6.col-xs-12
-          p(style="border: 1px solid blue; padding: 5px 10px; margin-bottom:0")
-            | Bob Smith retirement party
-            span.fa.fa-info-circle.pull-right(style="padding-top: 2px")
+        .employee-giving-events
+          .col-sm-6.col-xs-12
+            p.employee-giving-event.active 
+              | General givings
+              a(href="#" data-toggle="modal" data-target="#eventsModal")
+                span.fa.fa-info-circle.pull-right
+          .col-sm-6.col-xs-12
+            p.employee-giving-event 
+              |  Northwest Harvest food drive
+              a(href="#" data-toggle="modal" data-target="#eventsModal")
+                span.fa.fa-info-circle.pull-right
+          .col-sm-6.col-xs-12
+            p.employee-giving-event
+              | Veterans relief drive
+              a(href="#" data-toggle="modal" data-target="#eventsModal")
+                span.fa.fa-info-circle.pull-right
+          .col-sm-6.col-xs-12
+            p.employee-giving-event
+              | Bob Smith retirement party
+              a(href="#" data-toggle="modal" data-target="#eventsModal")
+                span.fa.fa-info-circle.pull-right
+        include eventsModal
       .row
         .col-sm-12
-          .thumbnail(style="padding:0")
-            img(src="https://unsplash.it/750/116/?blur" class="img-rounded")
+          .thumbnail.employee-giving-search
+            img(src="https://unsplash.it/750/116/?blur")
             .caption
-              h2 
-                span General donations
+              h2#employee-donation-panel-title 
+                span 
+                  | General donations&nbsp;
+                  span.fa.fa-question-circle.fa-color-primary( data-toggle="modal" data-target="#eventsModal")
               p 
                 a(href="#" data-toggle="modal" data-target="#paymentTypesModal") What are my payment options?
               include paymentsModal
               include searchInput
-          - var name = 'Abused Deaf Women\'s Advocacy Services';
-          - var id = '9615';
-          - var description = 'Women, Housing & Employment Mental Health, Disablities & Substance abuse';
-          include panels
-          - var name = 'Advocates for Success in Africa';
-          - var id = '9713';
-          - var description = 'Children & youth, International relief & development, Education & literacy';
-          include panels
-          - var name = 'African Wildlife Foundation';
-          - var id = '2506';
-          - var description = 'Environment Animals';
-          include panels
+              .dropdown
+                button.btn.btn-link.dropdown-toggle(id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
+                  strong
+                    | Category&nbsp;
+                    span.fa.fa-chevron-down
+                ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+                  li
+                    a(href="#") Category 1
+                  li
+                    a(href="#") Category 2
+                  li
+                    a(href="#") Category 3
+                  li
+                    a(href="#") Category 4
+                  li
+                    a(href="#") Category 5
+              .dropdown
+                button.btn.btn-link.dropdown-toggle(id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
+                  strong
+                    | Agency status&nbsp;
+                    span.fa.fa-chevron-down
+                ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+                  li
+                    a(href="#") Status 1
+                  li
+                    a(href="#") Status 2
+                  li
+                    a(href="#") Status 3
+                  li
+                    a(href="#") Status 4
+                  li
+                    a(href="#") Status 5
+              ul.list-inline.search-items
+                li.search-item#item12345
+                  .fa.fa-times.fa-color-danger
+                  | &nbsp;item1
+                li.search-item#item6789
+                  .fa.fa-times.fa-color-danger
+                  | &nbsp;item2
+                li.search-item#item01234
+                  .fa.fa-times.fa-color-danger
+                  | &nbsp;item3
+                li.search-item#item56789
+                  .fa.fa-times.fa-color-danger
+                  | &nbsp;item4
+                li.search-item#clear-all
+                  .fa.fa-times.fa-color-danger
+                  | &nbsp;Clear all
+          .employee-giving-pagination
+            include pagination
+          .employee-giving-search-results-panels
+            - var name = 'Abused Deaf Women\'s Advocacy Services';
+            - var id = '9615';
+            - var description = 'Women, Housing & Employment Mental Health, Disablities & Substance abuse';
+            - var added = false;
+            include panels
+            - var name = 'Advocates for Success in Africa';
+            - var id = '9713';
+            - var description = 'Children & youth, International relief & development, Education & literacy';
+            - var added = true;
+            include panels
+            - var name = 'African Wildlife Foundation';
+            - var id = '2506';
+            - var description = 'Environment Animals';
+            - var added = false;
+            include panels
+          .employee-giving-pagination
+            include pagination
     .col-md-4.visible-md-block.visible-lg-block
       include cart
 block custom-js

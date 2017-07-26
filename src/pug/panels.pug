@@ -3,11 +3,17 @@
     .panel-heading(role="tab")
       h4.panel-title
         a(data-toggle="collapse" data-parent="#non-profit-panel-"+id href="#non-profit-" + id class="collapsed" aria-expanded="false" aria-controls="collapseOnePrimary")
-          p #{name} (#{id})
-          .fa.fa-plus.pull-right
+          p 
+            if added
+              span.fa.fa-gift
+              | &nbsp;
+              span.fa.fa-shopping-cart 
+              | &nbsp;
+            | #{name} (#{id})
+            .fa.fa-plus.pull-right
           p
             em #{description}
-    div(id="non-profit-"+id class=id + ' panel-collapse collapse' role="tabpanel" aria-lablledby="parcelAccount" + id)
+    div(id="non-profit-"+id class='panel-collapse collapse' role="tabpanel")
       .panel-body
         .row
           .col-sm-12
@@ -29,11 +35,22 @@
             br
             p Tax ID number: 23-70768867
             .pull-right
-              button.btn.btn-primary 
-                | Payroll donation list&nbsp;
-                .fa.fa-gift
-              span &nbsp;&nbsp;
-              button.btn.btn-default 
-                | Donation today&nbsp;
-                .fa.fa-shopping-basket
-            
+              if added 
+                button.btn.btn-primary(disabled)
+                  | Added&nbsp;
+                  span.fa.fa-gift
+                span &nbsp;&nbsp;
+                button.btn.btn-default(disabled) 
+                  | Added&nbsp;
+                  .fa.fa-shopping-cart
+              else
+                button.btn.btn-primary 
+                  | Payroll donation list&nbsp;
+                  span.fa.fa-gift
+                span &nbsp;&nbsp;
+                button.btn.btn-default(type="button" data-toggle="modal" data-target="#addToCartModal")
+                  | Add to cart &nbsp;
+                  span.fa.fa-shopping-cart
+            p 
+              a(href="#") Get link
+  include addToCartModal

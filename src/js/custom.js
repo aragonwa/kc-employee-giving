@@ -20,3 +20,12 @@ $('body').click(function(e) {
 $(document).keyup(function(e) {
   if (e.keyCode === 27 && $onoffcanvas.hasClass('is-open')) $onoffcanvas.onoffcanvas('hide');  // esc
 });
+$employeeDonationEvents = $('.employee-donation-event');
+$('.employee-donation-event').click(function(){
+  $employeeDonationEvents.removeClass('active');
+  $(this).addClass('active')
+});
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})

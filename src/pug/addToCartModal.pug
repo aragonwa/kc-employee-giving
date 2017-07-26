@@ -1,0 +1,57 @@
+#addToCartModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='eventsModalLabel')
+  .modal-dialog.modal-lg(role='document' )
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+        |         
+        h4#eventsModalLabel.modal-title African Wildlife Foundation
+      |       
+      .modal-body
+        .agency-details.text-center
+          .fa.fa-shopping-cart.fa-color-success.fa-4x
+          p Add African Wildlife Foundation to my cart
+          p My donation should go towards this event:
+          p General donation
+        button.btn.btn-custom $25
+        button.btn.btn-custom $50
+        button.btn.btn-success $100
+        button.btn.btn-custom $500
+        button.btn.btn-custom $250
+        .input-group.pull-right(style="width:200px;")
+          span.input-group-addon Other $
+          input.form-control(type="text")
+        .form-group
+          label 
+            | Comment for non-profit&nbsp;
+            a(tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="You can let the non-profit know if this donation is in honor of someone, or add any other notes to the non-profit.")
+              span.fa.fa-question-circle
+          textarea.form-control(rows="3")
+        .checkbox
+          label
+            input(type="checkbox") 
+            | Make this donation anonymous&nbsp;
+          a(tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Your name will not be sent to the non-profit agency.")
+            span.fa.fa-question-circle
+        .call-out-text.call-out-text-success
+          form(action="")
+          p Only King County employees can donate at this time. Before you can add items to your cart you will need to validate that you are a King County employee.
+          .row
+            .col-sm-6
+              .form-group
+                label(for="FirstName") First name
+                input.form-control(type="text" id="FirstName")
+            .col-sm-6
+              .form-group
+                label(for="LastName") Last name
+                input.form-control(type="text" id="LastName")
+            .col-sm-12
+              .form-group
+                label(for="EmailAddress") Email address
+                input.form-control(type="email" id="EmailAddress")
+      .modal-footer
+        .text-center
+          button.btn.btn-primary(type='button')
+            | Save&nbsp;
+            .fa.fa-shopping-cart
+          button.btn.btn-default(type='button', data-dismiss='modal') Cancel

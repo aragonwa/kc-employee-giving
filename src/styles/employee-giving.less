@@ -1,0 +1,83 @@
+.employee-giving-events {
+  cursor: pointer;
+  margin-bottom: 160px;
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+  .employee-giving-event {
+    border: 1px solid @theme;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    color: @theme;
+    a {
+      .fa {
+        padding-top: 2px;
+      }
+    }
+    &.active {
+      border: 1px solid @theme;
+      padding: 5px 10px;
+      margin-bottom: 0;
+      background-color: @theme;
+      color: #FFFFFF;
+      a {
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.employee-giving-search {
+  padding: 0;
+  border: 1px solid @theme;
+  img {
+    border-bottom: 4px solid @theme;
+  }
+  .dropdown {
+    display: inline;
+    .dropdown-menu li a {
+      border-bottom: none;
+    }
+  }
+  .search-items {
+    margin-top: 10px;
+    border-top: 1px solid #cccccc;
+  }
+}
+
+.employee-giving-pagination {
+  margin: 20px 0;
+  padding-bottom: 5px;
+  .pagination {
+    margin: 0
+  }
+}
+
+.employee-giving-search-results-panels {
+  border-top: 4px solid @theme;
+  border-bottom: 4px solid @theme;
+  padding-top: 20px;
+  max-height: 550px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.employee-giving-donation-list {
+  margin-top: 25px;
+  .media:not(:last-child) {
+      border-bottom: 1px dotted #cccccc;
+  }
+  .cart-title {
+    border-bottom: 2px solid @theme;
+  }
+  .cart-items {
+    border-bottom: 2px solid @theme;
+    margin-bottom: 20px;
+    li.description {
+      color: #747167;
+    }
+  }
+}
+.cart .cart-items ul.leaders{
+    margin-bottom:0;
+}

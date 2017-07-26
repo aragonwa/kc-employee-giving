@@ -1,0 +1,35 @@
+
+/* tab for offcanvas panel */
+
+.onoffcanvas-tab {
+  position: absolute;
+  left: -80px;
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid transparent;
+  border-right: 30px solid #A5C727;
+  border-bottom: 30px solid transparent;
+  &:after {
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 60px;
+      background: #A5C727;
+      top: -30px;
+      left: 30px;
+  }
+  span.onoffcanvas-counter {
+      font-size: 20px;
+      width: 57px;
+      padding-left: 25px;
+      position: absolute;
+      top: -12px;
+      z-index: 100;
+      .fa {
+          display: inline;
+      }
+  }
+  @media (min-width: 992px) {
+      display: none;
+  }
+}

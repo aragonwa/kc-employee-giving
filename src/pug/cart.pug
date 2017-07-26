@@ -1,21 +1,35 @@
 .cart
   .cart-title
-    span.fa.fa-shopping-basket
+    span.fa.fa-shopping-cart
     | &nbsp; Today's donations
   .cart-items
-    ul.leaders
-      li
-        span Abused Deaf Women's Advocacy Services
-        span $200.00
-      li.description General donation
-      li
-        span American Red Cross Serving King County
-        span $50.00
-      li.description March flood relief drive
-      li
-        span American Red Cross Serving King County
-        span $25.00
-      li.description General donation
+    .media
+      .media-left
+        span.fa.fa-pencil-square-o.fa-color-success
+      .media-body
+        ul.leaders
+          li
+            span Abused Deaf Women's Advocacy Services
+            span $200.00
+          li.description General donation
+    .media
+      .media-left
+        span.fa.fa-pencil-square-o.fa-color-success
+      .media-body
+        ul.leaders
+          li
+            span American Red Cross Serving King County
+            span $50.00
+          li.description March flood relief drive
+    .media
+      .media-left
+        span.fa.fa-pencil-square-o.fa-color-success
+      .media-body
+        ul.leaders
+          li
+            span American Red Cross Serving King County
+            span $25.00
+          li.description General donation
   .cart-totals
     ul.leaders
       li
@@ -28,4 +42,7 @@
       li
         span Total
         span $280.00
-  button.btn.btn-success.btn-block Review/edit donations
+  button.btn.btn-success.btn-block Proceed to checkout
+  include payrollDonationList
+
+
