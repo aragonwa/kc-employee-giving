@@ -1,5 +1,6 @@
 # ePayments Employee Giving
 [kc-employee-giving.surge.sh](https://kc-employee-giving.surge.sh)
+[kc-employee-giving.surge.sh/specialEvent](https://kc-employee-giving.surge.sh/specialEvent)
 # Updates 
 7/26
 * Initial commit

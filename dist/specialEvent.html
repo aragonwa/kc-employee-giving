@@ -588,7 +588,6 @@
       <div class="container"><img class="visible-print" id="logo-img-print" src="/assets/img/KClogo-horiz-black-lg.gif" alt="King County logo">
         <div class="row row-offcanvas row-offcanvas-left">
           <div class="col-sm-12 col-md-12" id="main-content-sr">
-            <!-- BREADCRUMB-->
             <div class="row addon-row main-breadcrumb-row hidden-print">
               <div class="col-xs-12">
                 <!--button.btn.btn-nav-green.pull-left.visible-xs.visible-sm(data-toggle='offcanvas')
@@ -606,78 +605,650 @@
             <div class="row addon-row addon-row-attached">
               <div class="col-sm-12">
                 <div class="page-header">
-                  <h1>Tax payment review cart</h1>
+                  <h1>Find a non-profit</h1>
                 </div>
-                <p><a href="#"><span class="fa fa-arrow-left"></span>&nbsp;Back to search results</a></p>
+              </div>
+              <div class="onoffcanvas is-right" id="onoffcanvas" aria-expanded="false">
+                <div class="onoffcanvas-tab" data-target="#onoffcanvas" data-toggle="onoffcanvas" aria-expanded="false"><span class="onoffcanvas-counter">1<span class="fa fa-shopping-cart"></span></span></div>
+                <div id="offcanvas-cart">
+                  <button class="close" type="button" data-target="#onoffcanvas" data-toggle="onoffcanvas" aria-expanded="true">
+                    <div class="fa fa-close"></div>
+                  </button><span class="clearfix"></span>
+                  <div class="cart">
+                    <div class="cart-title"><span class="fa fa-shopping-cart"></span>&nbsp; Today's donations</div>
+                    <div class="cart-items">
+                      <div class="media">
+                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
+                        <div class="media-body">
+                          <ul class="leaders">
+                            <li><span>Abused Deaf Women's Advocacy Services</span><span>$200.00</span></li>
+                            <li class="description">General donation</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
+                        <div class="media-body">
+                          <ul class="leaders">
+                            <li><span>American Red Cross Serving King County</span><span>$50.00</span></li>
+                            <li class="description">March flood relief drive</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
+                        <div class="media-body">
+                          <ul class="leaders">
+                            <li><span>American Red Cross Serving King County</span><span>$25.00</span></li>
+                            <li class="description">General donation</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-totals">
+                      <ul class="leaders">
+                        <li><span>Subtotal</span><span>$275.00</span></li>
+                        <li><span>Fee</span><span>$5.00</span></li><br>
+                        <li><span>Total</span><span>$280.00</span></li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-success btn-block">Proceed to checkout</button>
+                    <div class="employee-giving-donation-list">
+                      <div class="cart-title"><span class="fa fa-gift"></span>&nbsp; Payroll donation list</div>
+                      <div class="cart-items">
+                        <div class="media">
+                          <div class="media-left"><span class="fa fa-times-circle fa-color-danger"></span></div>
+                          <div class="media-body">
+                            <ul class="list-unstyled">
+                              <li><strong>Angel Flight West</strong></li>
+                              <li class="description">Employee giving ID# 5615</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-left"><span class="fa fa-times-circle fa-color-danger"></span></div>
+                          <div class="media-body">
+                            <ul class="list-unstyled">
+                              <li><strong>American Red Cross Serving King County</strong></li>
+                              <li class="description">Employee giving ID# 5678</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-left"><span class="fa fa-times-circle fa-color-danger"></span></div>
+                          <div class="media-body">
+                            <ul class="list-unstyled">
+                              <li><strong>Sierra Club Foundation</strong></li>
+                              <li class="description">Employee giving ID# 9012</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <p>To set up your payroll deductions you will need to print or write down the Employee Giving numbers, then log into Peoplesoft.</p>
+                      <p><a href="#">How do I donate through Peoplesoft&nbsp;<span class="fa fa-question-circle"></span></a></p><br>
+                      <button class="btn btn-default btn-block">Print list</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row addon-row addon-row-attached">
-              <div class="col-sm-12">
-                <div class="review-header">
-                  <p><strong>
-                      <div class="fa fa-shopping-cart">&nbsp;</div>Confirm cart details</strong></p>
+              <div class="col-sm-12 col-md-8">
+                <p class="h5">CURRENT FUNDRAISING EVENTS</p>
+                <div class="row">
+                  <div class="employee-giving-events">
+                    <div class="col-sm-6 col-xs-12">
+                      <p class="employee-giving-event">General givings<a href="#" data-toggle="modal" data-target="#eventsModal"><span class="fa fa-info-circle pull-right"></span></a></p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                      <p class="employee-giving-event"> Northwest Harvest food drive<a href="#" data-toggle="modal" data-target="#eventsModal"><span class="fa fa-info-circle pull-right"></span></a></p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                      <p class="employee-giving-event active">Veterans relief drive<a href="#" data-toggle="modal" data-target="#eventsModal"><span class="fa fa-info-circle pull-right"></span></a></p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                      <p class="employee-giving-event">Bob Smith retirement party<a href="#" data-toggle="modal" data-target="#eventsModal"><span class="fa fa-info-circle pull-right"></span></a></p>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="eventsModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                          <h4 class="modal-title" id="eventsModalLabel">Veterans relief fund</h4>
+                        </div>      
+                        <div class="modal-body"><img class="pull-right p-l-md p-b-md" src="https://unsplash.it/400/250/">
+                          <p>Lorizzle ipsum dolizzle sizzle bow wow wow, consectetuer adipiscing elit. Check out this that's the shizzle velizzle, things volutpizzle, suscipit quizzle, gravida vizzle, arcu. Break it down crazy tortor. Sizzle erizzle. Shiz at bow wow wow dapibizzle yo mamma tempus phat. Nizzle daahng dawg nibh et turpizzle. Mah nizzle izzle tortizzle. Pellentesque shizzlin dizzle rhoncus nisi. Shizzle my nizzle crocodizzle hac habitasse platea dictumst. Donec dapibizzle. Curabitur tellus izzle, pretizzle my shizz, mattis you son of a bizzle, mofo hizzle, nunc. Hizzle suscipizzle. Fo semper velit sed the bizzle.</p>
+                          <p>Etizzle fizzle pizzle sure augue pimpin' accumsan. Shiznit izzle gangster. Own yo' away dolor, gizzle vitae, facilisis crackalackin, the bizzle break it down, bow wow wow. Vestibulizzle ante ipsizzle pizzle bow wow wow sizzle i'm in the shizzle luctizzle izzle ultricizzle posuere crazy Curae; Donec dolizzle. Integer faucibus. Maecenas pharetra that's the shizzle quizzle. Vivamizzle rutrizzle doggy orci. Sed facilisis. Maurizzle sem brizzle, venenatizzle eu, nizzle vel, blandit fizzle, magna.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="thumbnail employee-giving-search"><img src="https://unsplash.it/750/116/">
+                      <div class="caption">
+                        <h2 id="employee-donation-panel-title"> <span>
+                             Veterans' relief drive&nbsp;<span class="fa fa-question-circle fa-color-primary" data-toggle="modal" data-target="#eventsModal"></span></span></h2>
+                        <p> <a href="#" data-toggle="modal" data-target="#paymentTypesModal">What are my payment options?</a></p>
+                        <div class="modal fade" id="paymentTypesModal" tabindex="-1" role="dialog" aria-labelledby="paymentTypesModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title" id="paymentTypesModalLabel">What are my payment options?</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <h4>Make a donation now using a credit card or check</h4>        
+                                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.        </p>
+                                <h4>Make a donation through your next paycheck</h4>    
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>        
+                                <h4>Set up regular donations in Peoplesoft</h4>
+                                <p>
+                                   Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                              </div>      
+                              <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>3 non-profits available for the Veterans' relief drive</p>
+                    <div class="employee-giving-search-results-panels">
+                      <div class="panel-group" id="non-profit-panel-9615" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-accordion-primary-dark fade-in">
+                          <div class="panel-heading" role="tab">
+                            <h4 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#non-profit-panel-9615" href="#non-profit-9615" aria-expanded="false" aria-controls="collapseOnePrimary">
+                                <p> Abused Deaf Women's Advocacy Services (9615)
+                                  <div class="fa fa-plus pull-right"></div>
+                                </p>
+                                <p><em>Women, Housing &amp; Employment Mental Health, Disablities &amp; Substance abuse</em></p></a></h4>
+                          </div>
+                          <div class="panel-collapse collapse" id="non-profit-9615" role="tabpanel">
+                            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <p>The ACLU has been at the center of nearly every civil rights battle for the past 90 years, advancing liberty and justice for all.</p>
+                                  <p><strong>Website:&nbsp;</strong><a href="#">http://www.aclu-wa.org&nbsp;<span class="fa-external-link fa"></span></a></p>
+                                  <p><strong>Other resources:&nbsp;</strong><a href="#">Washington Secretary of State Charities program&nbsp;<span class="fa-external-link fa"></span></a>,&nbsp;<a href="#">Charity Navigator&nbsp;<span class="fa-external-link fa"></span></a>,&nbsp;<a href="#">Guidestar Information&nbsp;<span class="fa-external-link fa"></span></a></p><br>
+                                  <p>Tax ID number: 23-70768867</p>
+                                  <div class="pull-right">
+                                    <button class="btn btn-primary">
+                                       Payroll donation list&nbsp;<span class="fa fa-gift"></span></button><span>&nbsp;&nbsp;</span>
+                                    <button class="btn btn-success" type="button" data-toggle="modal" data-target="#addToCartModal">Add to cart &nbsp;<span class="fa fa-shopping-cart"></span></button>
+                                  </div>
+                                  <p> <a href="#" data-toggle="modal" data-target="#getLinkModal">Get link</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="addToCartModal modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">African Wildlife Foundation</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <div class="agency-details text-center">
+                                  <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
+                                  <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
+                                  <p>My donation should go towards this event:</p>
+                                  <p class="agency-event-type">General donation</p>
+                                </div>
+                                <div class="payment-amounts">
+                                  <button class="btn btn-custom">$25</button>
+                                  <button class="btn btn-custom">$50</button>
+                                  <button class="btn btn-success">$100</button>
+                                  <button class="btn btn-custom">$500</button>
+                                  <button class="btn btn-custom">$250</button>
+                                  <div class="input-group pull-right"><span class="input-group-addon">Other $</span>
+                                    <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label>
+                                     Comment for non-profit&nbsp;<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="You can let the non-profit know if this donation is in honor of someone, or add any other notes to the non-profit."><span class="fa fa-question-circle"></span></a></label>
+                                  <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox">Make this donation anonymous&nbsp;
+                                  </label><a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Your name will not be sent to the non-profit agency."><span class="fa fa-question-circle"></span></a>
+                                </div>
+                                <div class="call-out-text call-out-text-success">
+                                  <form action=""></form>
+                                  <p>Only King County employees can donate at this time. Before you can add items to your cart you will need to validate that you are a King County employee.</p>
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label for="FirstName">First name</label>
+                                        <input class="form-control" type="text" id="FirstName">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label for="LastName">Last name</label>
+                                        <input class="form-control" type="text" id="LastName">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                      <div class="form-group">
+                                        <label for="EmailAddress">Email address</label>
+                                        <input class="form-control" type="email" id="EmailAddress">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="text-center">
+                                  <button class="btn btn-primary" type="button">Save&nbsp;
+                                    <div class="fa fa-shopping-cart"></div>
+                                  </button>
+                                  <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="getLinkModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">Get link</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <p>Click button to copy link to clipboard</p>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" value="http://www.kingcounty.gov" readonly><span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="fa fa-files-o"></span></button></span>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel-group" id="non-profit-panel-9713" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-accordion-primary-dark fade-in">
+                          <div class="panel-heading" role="tab">
+                            <h4 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#non-profit-panel-9713" href="#non-profit-9713" aria-expanded="false" aria-controls="collapseOnePrimary">
+                                <p> <span class="fa fa-gift"></span>&nbsp;<span class="fa fa-shopping-cart"> </span>&nbsp;Advocates for Success in Africa (9713)
+                                  <div class="fa fa-plus pull-right"></div>
+                                </p>
+                                <p><em>Children &amp; youth, International relief &amp; development, Education &amp; literacy</em></p></a></h4>
+                          </div>
+                          <div class="panel-collapse collapse" id="non-profit-9713" role="tabpanel">
+                            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <p>The ACLU has been at the center of nearly every civil rights battle for the past 90 years, advancing liberty and justice for all.</p>
+                                  <p><strong>Website:&nbsp;</strong><a href="#">http://www.aclu-wa.org&nbsp;<span class="fa-external-link fa"></span></a></p>
+                                  <p><strong>Other resources:&nbsp;</strong><a href="#">Washington Secretary of State Charities program&nbsp;<span class="fa-external-link fa"></span></a>,&nbsp;<a href="#">Charity Navigator&nbsp;<span class="fa-external-link fa"></span></a>,&nbsp;<a href="#">Guidestar Information&nbsp;<span class="fa-external-link fa"></span></a></p><br>
+                                  <p>Tax ID number: 23-70768867</p>
+                                  <div class="pull-right">
+                                    <button class="btn btn-primary" disabled>Added&nbsp;<span class="fa fa-gift"></span></button><span>&nbsp;&nbsp;</span>
+                                    <button class="btn btn-default" disabled>
+                                       Added&nbsp;
+                                      <div class="fa fa-shopping-cart"></div>
+                                    </button>
+                                  </div>
+                                  <p> <a href="#" data-toggle="modal" data-target="#getLinkModal">Get link</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="addToCartModal modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">African Wildlife Foundation</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <div class="agency-details text-center">
+                                  <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
+                                  <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
+                                  <p>My donation should go towards this event:</p>
+                                  <p class="agency-event-type">General donation</p>
+                                </div>
+                                <div class="payment-amounts">
+                                  <button class="btn btn-custom">$25</button>
+                                  <button class="btn btn-custom">$50</button>
+                                  <button class="btn btn-success">$100</button>
+                                  <button class="btn btn-custom">$500</button>
+                                  <button class="btn btn-custom">$250</button>
+                                  <div class="input-group pull-right"><span class="input-group-addon">Other $</span>
+                                    <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label>
+                                     Comment for non-profit&nbsp;<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="You can let the non-profit know if this donation is in honor of someone, or add any other notes to the non-profit."><span class="fa fa-question-circle"></span></a></label>
+                                  <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox">Make this donation anonymous&nbsp;
+                                  </label><a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Your name will not be sent to the non-profit agency."><span class="fa fa-question-circle"></span></a>
+                                </div>
+                                <div class="call-out-text call-out-text-success">
+                                  <form action=""></form>
+                                  <p>Only King County employees can donate at this time. Before you can add items to your cart you will need to validate that you are a King County employee.</p>
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label for="FirstName">First name</label>
+                                        <input class="form-control" type="text" id="FirstName">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label for="LastName">Last name</label>
+                                        <input class="form-control" type="text" id="LastName">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                      <div class="form-group">
+                                        <label for="EmailAddress">Email address</label>
+                                        <input class="form-control" type="email" id="EmailAddress">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="text-center">
+                                  <button class="btn btn-primary" type="button">Save&nbsp;
+                                    <div class="fa fa-shopping-cart"></div>
+                                  </button>
+                                  <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="getLinkModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">Get link</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <p>Click button to copy link to clipboard</p>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" value="http://www.kingcounty.gov" readonly><span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="fa fa-files-o"></span></button></span>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel-group" id="non-profit-panel-2506" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-accordion-primary-dark fade-in">
+                          <div class="panel-heading" role="tab">
+                            <h4 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#non-profit-panel-2506" href="#non-profit-2506" aria-expanded="false" aria-controls="collapseOnePrimary">
+                                <p> African Wildlife Foundation (2506)
+                                  <div class="fa fa-plus pull-right"></div>
+                                </p>
+                                <p><em>Environment Animals</em></p></a></h4>
+                          </div>
+                          <div class="panel-collapse collapse" id="non-profit-2506" role="tabpanel">
+                            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <p>The ACLU has been at the center of nearly every civil rights battle for the past 90 years, advancing liberty and justice for all.</p>
+                                  <p><strong>Website:&nbsp;</strong><a href="#">http://www.aclu-wa.org&nbsp;<span class="fa-external-link fa"></span></a></p>
+                                  <p><strong>Other resources:&nbsp;</strong><a href="#">Washington Secretary of State Charities program&nbsp;<span class="fa-external-link fa"></span></a>,&nbsp;<a href="#">Charity Navigator&nbsp;<span class="fa-external-link fa"></span></a>,&nbsp;<a href="#">Guidestar Information&nbsp;<span class="fa-external-link fa"></span></a></p><br>
+                                  <p>Tax ID number: 23-70768867</p>
+                                  <div class="pull-right">
+                                    <button class="btn btn-primary">
+                                       Payroll donation list&nbsp;<span class="fa fa-gift"></span></button><span>&nbsp;&nbsp;</span>
+                                    <button class="btn btn-success" type="button" data-toggle="modal" data-target="#addToCartModal">Add to cart &nbsp;<span class="fa fa-shopping-cart"></span></button>
+                                  </div>
+                                  <p> <a href="#" data-toggle="modal" data-target="#getLinkModal">Get link</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="addToCartModal modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">African Wildlife Foundation</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <div class="agency-details text-center">
+                                  <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
+                                  <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
+                                  <p>My donation should go towards this event:</p>
+                                  <p class="agency-event-type">General donation</p>
+                                </div>
+                                <div class="payment-amounts">
+                                  <button class="btn btn-custom">$25</button>
+                                  <button class="btn btn-custom">$50</button>
+                                  <button class="btn btn-success">$100</button>
+                                  <button class="btn btn-custom">$500</button>
+                                  <button class="btn btn-custom">$250</button>
+                                  <div class="input-group pull-right"><span class="input-group-addon">Other $</span>
+                                    <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label>
+                                     Comment for non-profit&nbsp;<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="You can let the non-profit know if this donation is in honor of someone, or add any other notes to the non-profit."><span class="fa fa-question-circle"></span></a></label>
+                                  <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox">Make this donation anonymous&nbsp;
+                                  </label><a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Your name will not be sent to the non-profit agency."><span class="fa fa-question-circle"></span></a>
+                                </div>
+                                <div class="call-out-text call-out-text-success">
+                                  <form action=""></form>
+                                  <p>Only King County employees can donate at this time. Before you can add items to your cart you will need to validate that you are a King County employee.</p>
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label for="FirstName">First name</label>
+                                        <input class="form-control" type="text" id="FirstName">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label for="LastName">Last name</label>
+                                        <input class="form-control" type="text" id="LastName">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                      <div class="form-group">
+                                        <label for="EmailAddress">Email address</label>
+                                        <input class="form-control" type="email" id="EmailAddress">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="text-center">
+                                  <button class="btn btn-primary" type="button">Save&nbsp;
+                                    <div class="fa fa-shopping-cart"></div>
+                                  </button>
+                                  <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="getLinkModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">Get link</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <p>Click button to copy link to clipboard</p>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" value="http://www.kingcounty.gov" readonly><span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="fa fa-files-o"></span></button></span>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-12">
-                <div class="review-cart">
-                  <div class="review-cart-items">
+              <div class="col-md-4 visible-md-block visible-lg-block">
+                <div class="cart">
+                  <div class="cart-title"><span class="fa fa-shopping-cart"></span>&nbsp; Today's donations</div>
+                  <div class="cart-items">
                     <div class="media">
-                      <div class="media-left">
-                        <div class="fa fa-times-circle fa-color-danger"></div>
-                      </div>
+                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                       <div class="media-body">
                         <ul class="leaders">
-                          <li><span>1234567</span><span class="editable-input">$2000</span></li>
-                          <li class="description">sque in. Donec imperdiet fringilla dui, vel malesuada velit volutpat sed. Curabitur lacinia felis urna, quis euismod sapien sodales non.</li>
+                          <li><span>Abused Deaf Women's Advocacy Services</span><span>$200.00</span></li>
+                          <li class="description">General donation</li>
                         </ul>
                       </div>
                     </div>
                     <div class="media">
-                      <div class="media-left">
-                        <div class="fa fa-times-circle fa-color-danger"></div>
-                      </div>
+                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                       <div class="media-body">
                         <ul class="leaders">
-                          <li><span>8901234</span><span class="editable-input">$2000</span></li>
-                          <li class="description">sque in. Donec imperdiet fringilla dui, vel malesuada velit volutpat sed. Curabitur lacinia felis urna, quis euismod sapien sodales non.</li>
+                          <li><span>American Red Cross Serving King County</span><span>$50.00</span></li>
+                          <li class="description">March flood relief drive</li>
                         </ul>
                       </div>
                     </div>
                     <div class="media">
-                      <div class="media-left">
-                        <div class="fa fa-times-circle fa-color-danger"></div>
-                      </div>
+                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                       <div class="media-body">
                         <ul class="leaders">
-                          <li><span>8901234</span><span class="editable-input">$1562.45</span></li>
-                          <li class="description">sque in. Donec imperdiet fringilla dui, vel malesuada velit volutpat sed. Curabitur lacinia felis urna, quis euismod sapien sodales non.</li>
+                          <li><span>American Red Cross Serving King County</span><span>$25.00</span></li>
+                          <li class="description">General donation</li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="row review-cart-total">
-                    <div class="col-sm-6"></div>
-                    <div class="col-sm-6">
-                      <div class="cart-totals">
-                        <ul class="leaders">
-                          <li><span>Subtotal</span><span>$5432.45</span></li>
-                          <li><span>Service charge</span><span>$0</span></li>
-                          <li><span>Tax</span><span>$0</span></li>
-                          <li><span>Delivery</span><span>$0</span></li><br>
-                          <li><span>Total</span><span>$5432.45</span></li>
-                        </ul>
+                  <div class="cart-totals">
+                    <ul class="leaders">
+                      <li><span>Subtotal</span><span>$275.00</span></li>
+                      <li><span>Fee</span><span>$5.00</span></li><br>
+                      <li><span>Total</span><span>$280.00</span></li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-success btn-block">Proceed to checkout</button>
+                  <div class="employee-giving-donation-list">
+                    <div class="cart-title"><span class="fa fa-gift"></span>&nbsp; Payroll donation list</div>
+                    <div class="cart-items">
+                      <div class="media">
+                        <div class="media-left"><span class="fa fa-times-circle fa-color-danger"></span></div>
+                        <div class="media-body">
+                          <ul class="list-unstyled">
+                            <li><strong>Angel Flight West</strong></li>
+                            <li class="description">Employee giving ID# 5615</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left"><span class="fa fa-times-circle fa-color-danger"></span></div>
+                        <div class="media-body">
+                          <ul class="list-unstyled">
+                            <li><strong>American Red Cross Serving King County</strong></li>
+                            <li class="description">Employee giving ID# 5678</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left"><span class="fa fa-times-circle fa-color-danger"></span></div>
+                        <div class="media-body">
+                          <ul class="list-unstyled">
+                            <li><strong>Sierra Club Foundation</strong></li>
+                            <li class="description">Employee giving ID# 9012</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <p>To set up your payroll deductions you will need to print or write down the Employee Giving numbers, then log into Peoplesoft.</p>
+                    <p><a href="#">How do I donate through Peoplesoft&nbsp;<span class="fa fa-question-circle"></span></a></p><br>
+                    <button class="btn btn-default btn-block">Print list</button>
+                  </div>
+                </div>
+              </div>
+              <div class="addToCartModal modal fade" id="addToCartModal2" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                      <h4 class="modal-title">African Wildlife Foundation</h4>
+                    </div>      
+                    <div class="modal-body">
+                      <div class="agency-details text-center">
+                        <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
+                        <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
+                        <p>My donation should go towards this event:</p>
+                        <p class="agency-event-type">General donation</p>
+                      </div>
+                      <div class="payment-amounts">
+                        <button class="btn btn-custom">$25</button>
+                        <button class="btn btn-custom">$50</button>
+                        <button class="btn btn-success">$100</button>
+                        <button class="btn btn-custom">$500</button>
+                        <button class="btn btn-custom">$250</button>
+                        <div class="input-group pull-right"><span class="input-group-addon">Other $</span>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>
+                           Comment for non-profit&nbsp;<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="You can let the non-profit know if this donation is in honor of someone, or add any other notes to the non-profit."><span class="fa fa-question-circle"></span></a></label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Make this donation anonymous&nbsp;
+                        </label><a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Your name will not be sent to the non-profit agency."><span class="fa fa-question-circle"></span></a>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="text-center">
+                        <button class="btn btn-primary" type="button">Save&nbsp;
+                          <div class="fa fa-shopping-cart"></div>
+                        </button>
+                        <button class="btn btn-info" type="button">Remove&nbsp;
+                          <div class="fa fa-times-circle fa-color-danger"></div>
+                        </button>
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="row addon-row addon-row-attached">
-              <div class="col-sm-12">
-                <p>* You will be charged a service charge based on your payment type.</p>
-              </div>
-              <div class="col-sm-12">
-                <button class="btn btn-success">Proceed to billing</button>
               </div>
             </div>
             <div class="row addon-row addon-row-transparent main-share-links">

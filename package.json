@@ -14,7 +14,7 @@
     "prebuild": "npm run clean-dist && npm run copy:build",
     "build": "npm-run-all pug:build babel:build js:build less:build open:dist",
     "clean-dist": "rimraf ./dist && mkdir dist  && mkdirp dist/js",
-    "copy:build": "copyfiles -u 1 'src/assets/**' dist/",
+    "copy:build": "copyfiles -u 1 src/assets/** dist/",
     "open:dist": "babel-node buildScripts/distServer",
     "pug:build": "pug src/pug/index.pug src/pug/specialEvent.pug -P --obj pugConfig.json -o dist/",
     "less:build": "lessc --clean-css src/styles/custom.less dist/css/custom.css",

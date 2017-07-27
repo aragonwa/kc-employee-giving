@@ -618,7 +618,7 @@
                     <div class="cart-title"><span class="fa fa-shopping-cart"></span>&nbsp; Today's donations</div>
                     <div class="cart-items">
                       <div class="media">
-                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success"></span></div>
+                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                         <div class="media-body">
                           <ul class="leaders">
                             <li><span>Abused Deaf Women's Advocacy Services</span><span>$200.00</span></li>
@@ -627,7 +627,7 @@
                         </div>
                       </div>
                       <div class="media">
-                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success"></span></div>
+                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                         <div class="media-body">
                           <ul class="leaders">
                             <li><span>American Red Cross Serving King County</span><span>$50.00</span></li>
@@ -636,7 +636,7 @@
                         </div>
                       </div>
                       <div class="media">
-                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success"></span></div>
+                        <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                         <div class="media-body">
                           <ul class="leaders">
                             <li><span>American Red Cross Serving King County</span><span>$25.00</span></li>
@@ -836,35 +836,37 @@
                                   <div class="pull-right">
                                     <button class="btn btn-primary">
                                        Payroll donation list&nbsp;<span class="fa fa-gift"></span></button><span>&nbsp;&nbsp;</span>
-                                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#addToCartModal">Add to cart &nbsp;<span class="fa fa-shopping-cart"></span></button>
+                                    <button class="btn btn-success" type="button" data-toggle="modal" data-target="#addToCartModal">Add to cart &nbsp;<span class="fa fa-shopping-cart"></span></button>
                                   </div>
-                                  <p> <a href="#">Get link</a></p>
+                                  <p> <a href="#" data-toggle="modal" data-target="#getLinkModal">Get link</a></p>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                        <div class="addToCartModal modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
                           <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
-                                <h4 class="modal-title" id="eventsModalLabel">African Wildlife Foundation</h4>
+                                <h4 class="modal-title">African Wildlife Foundation</h4>
                               </div>      
                               <div class="modal-body">
                                 <div class="agency-details text-center">
                                   <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
-                                  <p>Add African Wildlife Foundation to my cart</p>
+                                  <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
                                   <p>My donation should go towards this event:</p>
-                                  <p>General donation</p>
+                                  <p class="agency-event-type">General donation</p>
                                 </div>
-                                <button class="btn btn-custom">$25</button>
-                                <button class="btn btn-custom">$50</button>
-                                <button class="btn btn-success">$100</button>
-                                <button class="btn btn-custom">$500</button>
-                                <button class="btn btn-custom">$250</button>
-                                <div class="input-group pull-right" style="width:200px;"><span class="input-group-addon">Other $</span>
-                                  <input class="form-control" type="text">
+                                <div class="payment-amounts">
+                                  <button class="btn btn-custom">$25</button>
+                                  <button class="btn btn-custom">$50</button>
+                                  <button class="btn btn-success">$100</button>
+                                  <button class="btn btn-custom">$500</button>
+                                  <button class="btn btn-custom">$250</button>
+                                  <div class="input-group pull-right"><span class="input-group-addon">Other $</span>
+                                    <input class="form-control" type="text">
+                                  </div>
                                 </div>
                                 <div class="form-group">
                                   <label>
@@ -908,6 +910,26 @@
                                   </button>
                                   <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="getLinkModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">Get link</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <p>Click button to copy link to clipboard</p>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" value="http://www.kingcounty.gov" readonly><span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="fa fa-files-o"></span></button></span>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
                               </div>
                             </div>
                           </div>
@@ -937,33 +959,35 @@
                                       <div class="fa fa-shopping-cart"></div>
                                     </button>
                                   </div>
-                                  <p> <a href="#">Get link</a></p>
+                                  <p> <a href="#" data-toggle="modal" data-target="#getLinkModal">Get link</a></p>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                        <div class="addToCartModal modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
                           <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
-                                <h4 class="modal-title" id="eventsModalLabel">African Wildlife Foundation</h4>
+                                <h4 class="modal-title">African Wildlife Foundation</h4>
                               </div>      
                               <div class="modal-body">
                                 <div class="agency-details text-center">
                                   <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
-                                  <p>Add African Wildlife Foundation to my cart</p>
+                                  <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
                                   <p>My donation should go towards this event:</p>
-                                  <p>General donation</p>
+                                  <p class="agency-event-type">General donation</p>
                                 </div>
-                                <button class="btn btn-custom">$25</button>
-                                <button class="btn btn-custom">$50</button>
-                                <button class="btn btn-success">$100</button>
-                                <button class="btn btn-custom">$500</button>
-                                <button class="btn btn-custom">$250</button>
-                                <div class="input-group pull-right" style="width:200px;"><span class="input-group-addon">Other $</span>
-                                  <input class="form-control" type="text">
+                                <div class="payment-amounts">
+                                  <button class="btn btn-custom">$25</button>
+                                  <button class="btn btn-custom">$50</button>
+                                  <button class="btn btn-success">$100</button>
+                                  <button class="btn btn-custom">$500</button>
+                                  <button class="btn btn-custom">$250</button>
+                                  <div class="input-group pull-right"><span class="input-group-addon">Other $</span>
+                                    <input class="form-control" type="text">
+                                  </div>
                                 </div>
                                 <div class="form-group">
                                   <label>
@@ -1007,6 +1031,26 @@
                                   </button>
                                   <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="getLinkModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">Get link</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <p>Click button to copy link to clipboard</p>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" value="http://www.kingcounty.gov" readonly><span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="fa fa-files-o"></span></button></span>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
                               </div>
                             </div>
                           </div>
@@ -1032,35 +1076,37 @@
                                   <div class="pull-right">
                                     <button class="btn btn-primary">
                                        Payroll donation list&nbsp;<span class="fa fa-gift"></span></button><span>&nbsp;&nbsp;</span>
-                                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#addToCartModal">Add to cart &nbsp;<span class="fa fa-shopping-cart"></span></button>
+                                    <button class="btn btn-success" type="button" data-toggle="modal" data-target="#addToCartModal">Add to cart &nbsp;<span class="fa fa-shopping-cart"></span></button>
                                   </div>
-                                  <p> <a href="#">Get link</a></p>
+                                  <p> <a href="#" data-toggle="modal" data-target="#getLinkModal">Get link</a></p>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                        <div class="addToCartModal modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
                           <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
-                                <h4 class="modal-title" id="eventsModalLabel">African Wildlife Foundation</h4>
+                                <h4 class="modal-title">African Wildlife Foundation</h4>
                               </div>      
                               <div class="modal-body">
                                 <div class="agency-details text-center">
                                   <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
-                                  <p>Add African Wildlife Foundation to my cart</p>
+                                  <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
                                   <p>My donation should go towards this event:</p>
-                                  <p>General donation</p>
+                                  <p class="agency-event-type">General donation</p>
                                 </div>
-                                <button class="btn btn-custom">$25</button>
-                                <button class="btn btn-custom">$50</button>
-                                <button class="btn btn-success">$100</button>
-                                <button class="btn btn-custom">$500</button>
-                                <button class="btn btn-custom">$250</button>
-                                <div class="input-group pull-right" style="width:200px;"><span class="input-group-addon">Other $</span>
-                                  <input class="form-control" type="text">
+                                <div class="payment-amounts">
+                                  <button class="btn btn-custom">$25</button>
+                                  <button class="btn btn-custom">$50</button>
+                                  <button class="btn btn-success">$100</button>
+                                  <button class="btn btn-custom">$500</button>
+                                  <button class="btn btn-custom">$250</button>
+                                  <div class="input-group pull-right"><span class="input-group-addon">Other $</span>
+                                    <input class="form-control" type="text">
+                                  </div>
                                 </div>
                                 <div class="form-group">
                                   <label>
@@ -1108,6 +1154,26 @@
                             </div>
                           </div>
                         </div>
+                        <div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="getLinkModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">Get link</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <p>Click button to copy link to clipboard</p>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" value="http://www.kingcounty.gov" readonly><span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="fa fa-files-o"></span></button></span>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="employee-giving-pagination">
@@ -1128,7 +1194,7 @@
                   <div class="cart-title"><span class="fa fa-shopping-cart"></span>&nbsp; Today's donations</div>
                   <div class="cart-items">
                     <div class="media">
-                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success"></span></div>
+                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                       <div class="media-body">
                         <ul class="leaders">
                           <li><span>Abused Deaf Women's Advocacy Services</span><span>$200.00</span></li>
@@ -1137,7 +1203,7 @@
                       </div>
                     </div>
                     <div class="media">
-                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success"></span></div>
+                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                       <div class="media-body">
                         <ul class="leaders">
                           <li><span>American Red Cross Serving King County</span><span>$50.00</span></li>
@@ -1146,7 +1212,7 @@
                       </div>
                     </div>
                     <div class="media">
-                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success"></span></div>
+                      <div class="media-left"><span class="fa fa-pencil-square-o fa-color-success" data-toggle="modal" data-target="#addToCartModal2"></span></div>
                       <div class="media-body">
                         <ul class="leaders">
                           <li><span>American Red Cross Serving King County</span><span>$25.00</span></li>
@@ -1197,6 +1263,55 @@
                     <p>To set up your payroll deductions you will need to print or write down the Employee Giving numbers, then log into Peoplesoft.</p>
                     <p><a href="#">How do I donate through Peoplesoft&nbsp;<span class="fa fa-question-circle"></span></a></p><br>
                     <button class="btn btn-default btn-block">Print list</button>
+                  </div>
+                </div>
+              </div>
+              <div class="addToCartModal modal fade" id="addToCartModal2" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                      <h4 class="modal-title">African Wildlife Foundation</h4>
+                    </div>      
+                    <div class="modal-body">
+                      <div class="agency-details text-center">
+                        <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
+                        <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
+                        <p>My donation should go towards this event:</p>
+                        <p class="agency-event-type">General donation</p>
+                      </div>
+                      <div class="payment-amounts">
+                        <button class="btn btn-custom">$25</button>
+                        <button class="btn btn-custom">$50</button>
+                        <button class="btn btn-success">$100</button>
+                        <button class="btn btn-custom">$500</button>
+                        <button class="btn btn-custom">$250</button>
+                        <div class="input-group pull-right"><span class="input-group-addon">Other $</span>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>
+                           Comment for non-profit&nbsp;<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="You can let the non-profit know if this donation is in honor of someone, or add any other notes to the non-profit."><span class="fa fa-question-circle"></span></a></label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Make this donation anonymous&nbsp;
+                        </label><a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Your name will not be sent to the non-profit agency."><span class="fa fa-question-circle"></span></a>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="text-center">
+                        <button class="btn btn-primary" type="button">Save&nbsp;
+                          <div class="fa fa-shopping-cart"></div>
+                        </button>
+                        <button class="btn btn-info" type="button">Remove&nbsp;
+                          <div class="fa fa-times-circle fa-color-danger"></div>
+                        </button>
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
