@@ -30,6 +30,11 @@ $paymentBtns.click(function(){
   });
   $(this).addClass('btn-success')
 });
+var $employeeGivingEvents = $('.employee-giving-event');
+$employeeGivingEvents.click(function(){
+  $employeeGivingEvents.removeClass('active');
+  $(this).addClass('active')
+});
 
 $(function () {
   $('[data-toggle="popover"]').popover()

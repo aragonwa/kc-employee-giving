@@ -257,6 +257,7 @@ button.onoffcanvas-toggler {
 /* tab for offcanvas panel */
 .onoffcanvas-tab {
   position: absolute;
+  top: 50px;
   left: -80px;
   width: 0px;
   height: 0px;
@@ -388,9 +389,6 @@ ul.leaders .description:before {
   border-top: 4px solid #264c5d;
   border-bottom: 4px solid #264c5d;
   padding-top: 20px;
-  max-height: 550px;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 .employee-giving-donation-list {
   margin-top: 25px;
