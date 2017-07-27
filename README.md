@@ -2,13 +2,16 @@
 [kc-employee-giving.surge.sh](https://kc-employee-giving.surge.sh)
 
 [kc-employee-giving.surge.sh/specialEvent](https://kc-employee-giving.surge.sh/specialEvent)
+
+[kc-employee-giving.surge.sh/review](https://kc-employee-giving.surge.sh/review)
 # Updates 
-7/26
-* Initial commit
-* Include general serach
 7/28
 * Special event page/example
 * Add to Cart modal updated
+* Add review page
+7/26
+* Initial commit
+* Include general serach
 * TODO:
   * Fix tab for onoff canvas screen
   * ~~Styling for addtocart modals~~
@@ -20,8 +23,9 @@ dist/
 ├── assets/ (Contains files that come included with MasterPage)
 ├── css/
 │   └── custom.css
-└── js/
+├── js/
 │   └── custom.js
-└── index.html (search page)
-└── specialEvent.html
+├── index.html (search page)
+├── specialEvent.html
+└── review.html
 ```

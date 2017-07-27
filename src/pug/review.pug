@@ -15,18 +15,20 @@ block main-content
   .row.addon-row.addon-row-attached
     .col-sm-12
       .page-header
-        h1 Tax payment review cart
+        h1 Review/edit donation list
       p
         a(href="#")
           span.fa.fa-arrow-left
           | &nbsp;Back to search results
   .row.addon-row.addon-row-attached
     .col-sm-12
+      p
+        strong This list is for credit card and check payments. If you want to print the payroll donation list, go back to search results and choose "print list" from shopping cart.
+      br
       .review-header
         p
-          strong
-            .fa.fa-shopping-cart &nbsp;
-            | Confirm cart details
+          .fa.fa-shopping-cart &nbsp;
+          | Donation cart
     .col-sm-12
       .review-cart
         .review-cart-items
@@ -36,94 +38,69 @@ block main-content
             .media-body
               ul.leaders
                 li
-                  span 1234567
-                  span.editable-input $2000
-                li.description sque in. Donec imperdiet fringilla dui, vel malesuada velit volutpat sed. Curabitur lacinia felis urna, quis euismod sapien sodales non.
+                  span Abused Deaf Women's Adovacy Services (9616)
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="585")
+                      div.input-group-addon .00
+                li.description General donation
+                li.description
+                  em "In honor of Josephine Tailor"
+                li.description Donated anonymously
           .media
             .media-left
               .fa.fa-times-circle.fa-color-danger
             .media-body
               ul.leaders
                 li
-                  span 8901234
-                  span.editable-input $2000
-                li.description sque in. Donec imperdiet fringilla dui, vel malesuada velit volutpat sed. Curabitur lacinia felis urna, quis euismod sapien sodales non.
+                  span American Red Cross Serving King County (3245)
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="200")
+                      div.input-group-addon .00
+                li.description General donation
           .media
             .media-left
               .fa.fa-times-circle.fa-color-danger
             .media-body
               ul.leaders
                 li
-                  span 8901234
-                  span.editable-input $1562.45
-                li.description sque in. Donec imperdiet fringilla dui, vel malesuada velit volutpat sed. Curabitur lacinia felis urna, quis euismod sapien sodales non.
+                  span American Red Cross Serving King County (3245)
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="25")
+                      div.input-group-addon .00
+                li.description March flood relief drive
+                li.description
+                  em "In honor of Josephine Tailor"
+          .media
+            .media-left
+              .fa.fa-times-circle.fa-color-danger
+            .media-body
+              ul.leaders
+                li
+                  span Angel Flight West (9615)
+                  span
+                    .input-group
+                      div.input-group-addon $
+                      input.form-control(type="text" aria-label="Amount (to the nearest dollar)" value="1,000")
+                      div.input-group-addon .00
+                li.description John Smith retirement
+                li.description Donated anonymously
         .row.review-cart-total
           .col-sm-6
           .col-sm-6
             .cart-totals
               ul.leaders
                 li
-                  span Subtotal
-                  span $5432.45
-                li
-                  span Service charge
-                  span $0
-                li
-                  span Tax
-                  span $0
-                li
-                  span Delivery
-                  span $0
-                br
-                li
                   span Total
-                  span $5432.45
-  //- .row.addon-row.addon-row-attached
-  //-   .col-sm-6
-  //-     p
-  //-       strong Confirm billing address
-  //-     .media
-  //-       .media-left
-  //-         label
-  //-           input(type='checkbox' checked)
-  //-       .media-body
-  //-         p Use this address for billing
-  //-         p
-  //-           | ABC Inc.
-  //-           br
-  //-           | First St.
-  //-           br
-  //-           | Seattle, WA 91919
-  //-     .media
-  //-       .media-left
-  //-         label
-  //-           input(type='checkbox')
-  //-       .media-body
-  //-         p Enter new address
-  //-   .col-sm-6
-  //-     p
-  //-       strong Confirm shipping/receipt address
-  //-     .media
-  //-       .media-left
-  //-         label
-  //-           input(type='checkbox' checked)
-  //-       .media-body
-  //-         p Use this address for billing
-  //-         p
-  //-           | ABC Inc.
-  //-           br
-  //-           | First St.
-  //-           br
-  //-           | Seattle, WA 91919
-  //-     .media
-  //-       .media-left
-  //-         label
-  //-           input(type='checkbox')
-  //-       .media-body
-  //-         p Enter new address
+                  span $2,345.00
   .row.addon-row.addon-row-attached
     .col-sm-12
-      p * You will be charged a service charge based on your payment type.
+      p * There will be a service fee added at the time of payment based on the type of the payment chosen.
     .col-sm-12
       button.btn.btn-success Proceed to billing
 block custom-js
