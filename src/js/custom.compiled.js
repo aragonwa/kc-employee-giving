@@ -136,10 +136,15 @@ $('body').click(function(e) {
 $(document).keyup(function(e) {
   if (e.keyCode === 27 && $onoffcanvas.hasClass('is-open')) $onoffcanvas.onoffcanvas('hide');  // esc
 });
-$employeeGivingEvents = $('.employee-giving-event');
-$employeeGivingEvents.click(function(){
-  $employeeGivingEvents.removeClass('active');
-  $(this).addClass('active')
+var $paymentBtns = $('#addToCartModal .payment-amounts button');
+$paymentBtns.click(function(){
+  $paymentBtns.each(function(i, btn){
+    if($(btn).hasClass('btn-success')){
+      $(btn).removeClass('btn-success');
+      $(btn).addClass('btn-custom');
+    };
+  });
+  $(this).addClass('btn-success')
 });
 
 $(function () {

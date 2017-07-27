@@ -18,4 +18,5 @@ dist/
 └── js/
 │   └── custom.js
 └── index.html (search page)
+└── specialEvent.html
 ```

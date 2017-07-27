@@ -1,0 +1,18 @@
+#getLinkModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='getLinkModalLabel')
+  .modal-dialog.modal-lg(role='document' )
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+        |         
+        h4.modal-title Get link
+      |       
+      .modal-body
+        p Click button to copy link to clipboard
+        .input-group
+          input.form-control(type="text" value="http://www.kingcounty.gov" readonly) 
+          span.input-group-btn
+            button.btn.btn-primary(type="button")
+              span.fa.fa-files-o
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close

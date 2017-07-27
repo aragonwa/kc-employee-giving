@@ -22,17 +22,17 @@ block main-content
       .row
         .employee-giving-events
           .col-sm-6.col-xs-12
-            p.employee-giving-event.active 
+            p.employee-giving-event
               | General givings
               a(href="#" data-toggle="modal" data-target="#eventsModal")
                 span.fa.fa-info-circle.pull-right
           .col-sm-6.col-xs-12
-            p.employee-giving-event 
+            p.employee-giving-event
               |  Northwest Harvest food drive
               a(href="#" data-toggle="modal" data-target="#eventsModal")
                 span.fa.fa-info-circle.pull-right
           .col-sm-6.col-xs-12
-            p.employee-giving-event
+            p.employee-giving-event.active
               | Veterans relief drive
               a(href="#" data-toggle="modal" data-target="#eventsModal")
                 span.fa.fa-info-circle.pull-right
@@ -45,66 +45,16 @@ block main-content
       .row
         .col-sm-12
           .thumbnail.employee-giving-search
-            img(src="https://unsplash.it/750/116/?blur")
+            img(src="https://unsplash.it/750/116/")
             .caption
               h2#employee-donation-panel-title 
                 span 
-                  | General donations&nbsp;
+                  | Veterans' relief drive&nbsp;
                   span.fa.fa-question-circle.fa-color-primary( data-toggle="modal" data-target="#eventsModal")
               p 
                 a(href="#" data-toggle="modal" data-target="#paymentTypesModal") What are my payment options?
               include paymentsModal
-              include searchInput
-              .dropdown
-                button.btn.btn-link.dropdown-toggle(id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
-                  strong
-                    | Category&nbsp;
-                    span.fa.fa-chevron-down
-                ul.dropdown-menu(aria-labelledby="dropdownMenu1")
-                  li
-                    a(href="#") Category 1
-                  li
-                    a(href="#") Category 2
-                  li
-                    a(href="#") Category 3
-                  li
-                    a(href="#") Category 4
-                  li
-                    a(href="#") Category 5
-              .dropdown
-                button.btn.btn-link.dropdown-toggle(id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
-                  strong
-                    | Agency status&nbsp;
-                    span.fa.fa-chevron-down
-                ul.dropdown-menu(aria-labelledby="dropdownMenu1")
-                  li
-                    a(href="#") Status 1
-                  li
-                    a(href="#") Status 2
-                  li
-                    a(href="#") Status 3
-                  li
-                    a(href="#") Status 4
-                  li
-                    a(href="#") Status 5
-              ul.list-inline.search-items
-                li.search-item#item12345
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;item1
-                li.search-item#item6789
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;item2
-                li.search-item#item01234
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;item3
-                li.search-item#item56789
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;item4
-                li.search-item#clear-all
-                  .fa.fa-times.fa-color-danger
-                  | &nbsp;Clear all
-          .employee-giving-pagination
-            include pagination
+          p 3 non-profits available for the Veterans' relief drive
           .employee-giving-search-results-panels
             - var name = 'Abused Deaf Women\'s Advocacy Services';
             - var id = '9615';
@@ -121,8 +71,6 @@ block main-content
             - var description = 'Environment Animals';
             - var added = false;
             include panels
-          .employee-giving-pagination
-            include pagination
     .col-md-4.visible-md-block.visible-lg-block
       include cart
     include addToCartModal2

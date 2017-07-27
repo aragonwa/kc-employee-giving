@@ -1,4 +1,4 @@
-#addToCartModal.addToCartModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='eventsModalLabel')
+#addToCartModal2.addToCartModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='eventsModalLabel')
   .modal-dialog.modal-lg(role='document' )
     .modal-content
       .modal-header
@@ -37,25 +37,12 @@
             | Make this donation anonymous&nbsp;
           a(tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Your name will not be sent to the non-profit agency.")
             span.fa.fa-question-circle
-        .call-out-text.call-out-text-success
-          form(action="")
-          p Only King County employees can donate at this time. Before you can add items to your cart you will need to validate that you are a King County employee.
-          .row
-            .col-sm-6
-              .form-group
-                label(for="FirstName") First name
-                input.form-control(type="text" id="FirstName")
-            .col-sm-6
-              .form-group
-                label(for="LastName") Last name
-                input.form-control(type="text" id="LastName")
-            .col-sm-12
-              .form-group
-                label(for="EmailAddress") Email address
-                input.form-control(type="email" id="EmailAddress")
       .modal-footer
         .text-center
           button.btn.btn-primary(type='button')
             | Save&nbsp;
             .fa.fa-shopping-cart
+          button.btn.btn-info(type='button')
+            | Remove&nbsp;
+            .fa.fa-times-circle.fa-color-danger
           button.btn.btn-default(type='button', data-dismiss='modal') Cancel

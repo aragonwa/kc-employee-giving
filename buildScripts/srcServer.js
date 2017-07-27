@@ -11,7 +11,7 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, '../src')));
 
-let routes = ['index', 'review', 'search', 'receipt'];
+let routes = ['index', 'specialEvent'];
 for( let route of routes) {
   if(route === 'index') {
     app.get('/', (req, res) => {

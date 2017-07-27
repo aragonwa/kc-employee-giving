@@ -452,13 +452,29 @@ fieldset[disabled] .btn-custom.active {
   color: #FFFFFF;
   background-color: #000000;
 }
+.addToCartModal .modal-body .agency-details {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.addToCartModal .modal-body .agency-details .agency-title {
+  font-size: 25px;
+}
+.addToCartModal .modal-body .agency-details .agency-event-type {
+  font-size: 20px;
+}
+.addToCartModal .modal-body .payment-amounts {
+  margin-bottom: 20px;
+}
 @media (min-width: 992px) {
-  #addToCartModal .modal-body button:not(:last-child) {
+  .addToCartModal .modal-body .payment-amounts button:not(:last-child) {
     margin-right: 30px;
   }
 }
 @media (min-width: 992px) {
-  #addToCartModal .modal-body button {
+  .addToCartModal .modal-body .payment-amounts button {
     width: 80px;
   }
+}
+.addToCartModal .modal-body .payment-amounts .input-group {
+  width: 200px;
 }
