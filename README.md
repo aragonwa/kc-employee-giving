@@ -4,11 +4,14 @@
 [kc-employee-giving.surge.sh/specialEvent](https://kc-employee-giving.surge.sh/specialEvent)
 
 [kc-employee-giving.surge.sh/review](https://kc-employee-giving.surge.sh/review)
+
+[kc-employee-giving.surge.sh/reviewPayroll](https://kc-employee-giving.surge.sh/reviewPayroll)
 # Updates 
 7/28
 * Special event page/example
 * Add to Cart modal updated
 * Add review page
+* Add review payroll page
 7/26
 * Initial commit
 * Include general serach
