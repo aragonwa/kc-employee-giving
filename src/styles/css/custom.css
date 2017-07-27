@@ -452,3 +452,13 @@ fieldset[disabled] .btn-custom.active {
   color: #FFFFFF;
   background-color: #000000;
 }
+@media (min-width: 992px) {
+  #addToCartModal .modal-body button:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #addToCartModal .modal-body button {
+    width: 80px;
+  }
+}
