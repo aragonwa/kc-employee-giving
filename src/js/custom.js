@@ -20,9 +20,9 @@ $('body').click(function(e) {
 $(document).keyup(function(e) {
   if (e.keyCode === 27 && $onoffcanvas.hasClass('is-open')) $onoffcanvas.onoffcanvas('hide');  // esc
 });
-$employeeDonationEvents = $('.employee-donation-event');
-$('.employee-donation-event').click(function(){
-  $employeeDonationEvents.removeClass('active');
+$employeeGivingEvents = $('.employee-giving-event');
+$employeeGivingEvents.click(function(){
+  $employeeGivingEvents.removeClass('active');
   $(this).addClass('active')
 });
 
