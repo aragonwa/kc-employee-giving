@@ -21,7 +21,7 @@ app.locals.env = process.env;
 app.use(compression());
 app.use(express.static(path.join(__dirname,'../dist')));
 
-let routes = ['index', 'specialEvent', 'review'];
+let routes = ['index', 'specialEvent', 'review', 'receipt', 'reviewPayroll'];
 for(let route of routes) {
   if(route === 'index') {
     app.get('/', (req, res) => {

@@ -20,10 +20,9 @@ block main-content
             span.fa.fa-download.fa-lg
           button.btn.btn-link
             span.fa.fa-print.fa-lg
-        h1 Tax payment receipt
+        h1 Donation receipt
         h2
-          small Thank you for your payment
-
+          small Thank you for your donation!
       p
         a(href="#")
           span.fa.fa-arrow-left
@@ -32,19 +31,12 @@ block main-content
     .col-sm-12
       .receipt-header
         p
-          strong Please print or save this receipt for your records. For questions about your bill, please contact:
-        p
-          | King County Treasury
-          br
-          | 401 5th Ave, Suite 600
-          br
-          | Seattle, WA 98102
-          br
-          | (206) 666-6666
+          strong Please print this page for your records. If you requested an email, on will be mail to you shortly.
+
     .col-sm-12
         p
           strong Transaction #
-            span#transaction-number 6567656
+            span#transaction-number 56789000
           br
           | Completed: 05/18/2017, 2:00 p.m. (PST)
         p
@@ -59,34 +51,39 @@ block main-content
         br
         .receipt-cart
           p.receipt-cart-header
-            strong Itemization
+            strong
+              span.fa.fa-gift
+              | &nbsp;
+              | Donations
           .receipt-cart-items
             ul.leaders
                 li
-                  span 1234567
-                  span $2000
-                li.description sque in. Donec imperdiet fringilla dui, vel malesuada velit volutpat sed. Curabitur lacinia felis urna, quis euismod sapien sodales non.
+                  span Abused Deaf Women's Adovacy Services (9616)
+                  span $585.77
+                li.description General donation
+                li.description
+                  em In honor of Josephine Tailor
+                li.description Donated anonymously
                 li
-                  span 8901234
-                  span $2000
-                li.description sque in. Donec imperdiet fringilla dui, vel malesuada velit volutpat sed. Curabitur lacinia felis urna, quis euismod sapien sodales non.
+                  span American Red Cross Serving King County (3245)
+                  span $585.77
+                li.description General donation
+                li
+                  span American Red Cross Serving King County (3245)
+                  span $585.77
+                li.description March flood relief drive
+                li.description 
+                  em In honor of Josephine Tailor
+                li
+                  span Angel Flight West (9615)
+                  span $585.77
+                li.description John Smith retirement
+                li.description 
+                  em In honor of Josephine Tailor
           .row
             .col-sm-offset-6.col-sm-6
               .cart-totals
                 ul.leaders
-                  li
-                    span Subtotal
-                    span $5432.45
-                  li
-                    span Service charge
-                    span $0
-                  li
-                    span Tax
-                    span $0
-                  li
-                    span Delivery
-                    span $0
-                  br
                   li
                     span Total
                     span $5432.45
