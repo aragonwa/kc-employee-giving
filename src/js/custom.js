@@ -20,7 +20,7 @@ $('body').click(function(e) {
 $(document).keyup(function(e) {
   if (e.keyCode === 27 && $onoffcanvas.hasClass('is-open')) $onoffcanvas.onoffcanvas('hide');  // esc
 });
-$employeeGivingEvents = $('.employee-giving-event');
+var $employeeGivingEvents = $('.employee-giving-event');
 $employeeGivingEvents.click(function(){
   $employeeGivingEvents.removeClass('active');
   $(this).addClass('active')
