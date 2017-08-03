@@ -178,6 +178,9 @@ button.onoffcanvas-toggler {
   font-weight: 400;
   position: relative;
 }
+.panel.panel-accordion-primary-dark h4.panel-title a {
+  min-height: 60px;
+}
 .panel.panel-accordion-primary-dark h4.panel-title a p {
   margin-bottom: 5px;
 }
