@@ -786,23 +786,6 @@
                             <li><a href="#">Status 5</a></li>
                           </ul>
                         </div>
-                        <ul class="list-inline search-items">
-                          <li class="search-item" id="item12345">
-                            <div class="fa fa-times fa-color-danger"></div>&nbsp;item1
-                          </li>
-                          <li class="search-item" id="item6789">
-                            <div class="fa fa-times fa-color-danger"></div>&nbsp;item2
-                          </li>
-                          <li class="search-item" id="item01234">
-                            <div class="fa fa-times fa-color-danger"></div>&nbsp;item3
-                          </li>
-                          <li class="search-item" id="item56789">
-                            <div class="fa fa-times fa-color-danger"></div>&nbsp;item4
-                          </li>
-                          <li class="search-item" id="clear-all">
-                            <div class="fa fa-times fa-color-danger"></div>&nbsp;Clear all
-                          </li>
-                        </ul>
                       </div>
                     </div>
                     <div class="employee-giving-pagination">
@@ -1066,6 +1049,125 @@
                                 <p><em>Environment Animals</em></p></a></h4>
                           </div>
                           <div class="panel-collapse collapse" id="non-profit-2506" role="tabpanel">
+                            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <p>The ACLU has been at the center of nearly every civil rights battle for the past 90 years, advancing liberty and justice for all.</p>
+                                  <p><strong>Website:&nbsp;</strong><a href="#">http://www.aclu-wa.org&nbsp;<span class="fa-external-link fa"></span></a></p>
+                                  <p><strong>Other resources:&nbsp;</strong><a href="#">Washington Secretary of State Charities program&nbsp;<span class="fa-external-link fa"></span></a>,&nbsp;<a href="#">Charity Navigator&nbsp;<span class="fa-external-link fa"></span></a>,&nbsp;<a href="#">Guidestar Information&nbsp;<span class="fa-external-link fa"></span></a></p><br>
+                                  <p>Tax ID number: 23-70768867</p>
+                                  <div class="pull-right">
+                                    <button class="btn btn-primary">
+                                       Payroll donation list&nbsp;<span class="fa fa-gift"></span></button><span>&nbsp;&nbsp;</span>
+                                    <button class="btn btn-success" type="button" data-toggle="modal" data-target="#addToCartModal">Add to cart &nbsp;<span class="fa fa-shopping-cart"></span></button>
+                                  </div>
+                                  <p> <a href="#" data-toggle="modal" data-target="#getLinkModal">Get link</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="addToCartModal modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="eventsModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">African Wildlife Foundation</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <div class="agency-details text-center">
+                                  <div class="fa fa-shopping-cart fa-color-success fa-4x"></div>
+                                  <p class="agency-title">Add&nbsp; <strong>African Wildlife Foundation&nbsp;</strong>to my cart</p>
+                                  <p>My donation should go towards this event:</p>
+                                  <p class="agency-event-type">General donation</p>
+                                </div>
+                                <div class="payment-amounts text-center">
+                                  <button class="btn btn-custom">$25</button>
+                                  <button class="btn btn-custom">$50</button>
+                                  <button class="btn btn-success">$100</button>
+                                  <button class="btn btn-custom">$500</button>
+                                  <button class="btn btn-custom">$250</button>
+                                  <div class="input-group"><span class="input-group-addon">Other $</span>
+                                    <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label>
+                                     Comment for non-profit&nbsp;<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="You can let the non-profit know if this donation is in honor of someone, or add any other notes to the non-profit."><span class="fa fa-question-circle"></span></a></label>
+                                  <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox">Make this donation anonymous&nbsp;
+                                  </label><a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-content="Your name will not be sent to the non-profit agency."><span class="fa fa-question-circle"></span></a>
+                                </div>
+                                <div class="call-out-text call-out-text-success">
+                                  <form action=""></form>
+                                  <p>Only King County employees can donate at this time. Before you can add items to your cart you will need to validate that you are a King County employee.</p>
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label for="FirstName">First name</label>
+                                        <input class="form-control" type="text" id="FirstName">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label for="LastName">Last name</label>
+                                        <input class="form-control" type="text" id="LastName">
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                      <div class="form-group">
+                                        <label for="EmailAddress">Email address</label>
+                                        <input class="form-control" type="email" id="EmailAddress">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="text-center">
+                                  <button class="btn btn-primary" type="button">Save&nbsp;
+                                    <div class="fa fa-shopping-cart"></div>
+                                  </button>
+                                  <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="getLinkModal" tabindex="-1" role="dialog" aria-labelledby="getLinkModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                                <h4 class="modal-title">Get link</h4>
+                              </div>      
+                              <div class="modal-body">
+                                <p>Click button to copy link to clipboard</p>
+                                <div class="input-group">
+                                  <input class="form-control" type="text" value="http://www.kingcounty.gov" readonly><span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="fa fa-files-o"></span></button></span>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel-group" id="non-profit-panel-1233" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-accordion-primary-dark fade-in">
+                          <div class="panel-heading" role="tab">
+                            <h4 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#non-profit-panel-1233" href="#non-profit-1233" aria-expanded="false" aria-controls="collapseOnePrimary">
+                                <p> Yet Another Non-Profit (1233)
+                                  <div class="fa fa-plus pull-right"></div>
+                                </p>
+                                <p><em></em></p></a></h4>
+                          </div>
+                          <div class="panel-collapse collapse" id="non-profit-1233" role="tabpanel">
                             <div class="panel-body">
                               <div class="row">
                                 <div class="col-sm-12">
