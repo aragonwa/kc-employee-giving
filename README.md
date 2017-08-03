@@ -7,11 +7,17 @@
 
 [kc-employee-giving.surge.sh/reviewPayroll](https://kc-employee-giving.surge.sh/reviewPayroll)
 # Updates 
+8/3
+* Panels: Fixing height issue when no description is present
+* Fixing bug with modals and offcanvas cart
+* Removing search items from below search box
+
 7/28
 * Special event page/example
 * Add to Cart modal updated
 * Add review page
 * Add review payroll page
+
 7/26
 * Initial commit
 * Include general serach
