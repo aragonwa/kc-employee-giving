@@ -22,12 +22,12 @@ block main-content
           | &nbsp;Add more non-profits
   .row.addon-row.addon-row-attached
     .col-sm-12
-      p
-        strong You will need to manually input donation amounts into Peoplesoft if you want your donations to be be taken from you paycheck. Print this list and use it to input them into Peoplesoft. The 4-digit non-profit number is what you will need.
+      p.lead
+        | You will need to manually input donation amounts into Peoplesoft if you want your donations to be be taken from you paycheck. Print this list and use it to input them into Peoplesoft. The 4-digit non-profit number is what you will need.
       br
       .review-header
-        p
-          .fa.fa-gift &nbsp;
+        p.payment-engine-heading
+          span.fa.fa-gift &nbsp;
           | Payroll donation list
     .col-sm-12
       .review-cart
@@ -58,13 +58,13 @@ block main-content
                 li Employee giving ID# 2545
   .row.addon-row.addon-row-attached
     .col-sm-12
-      p * There will be a service fee added at the time of payment based on the type of the payment chosen.
+      p(style="padding-top:8px; padding-bottom: 45px;") * There will be a service fee added at the time of payment based on the type of the payment chosen.
     .col-sm-12
       button.btn.btn-default Print list
       br
       br
-      button.btn.btn-success
-        .fa.fa-lock
+      button.btn.btn-payment-engine
+        span.fa.fa-lock
         | &nbsp;Edit list in Peoplesoft
 block custom-js
   if production

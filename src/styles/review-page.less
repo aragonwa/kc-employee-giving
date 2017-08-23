@@ -1,15 +1,32 @@
 
 // Review Page
 .review-header {
-  border-bottom: 6px solid #A5C727;
+  border-bottom: 6px solid @paymentEngineGreen;
 }
 
 .review-cart {
-  border-bottom: 6px solid #A5C727;
+  border-bottom: 6px solid @paymentEngineGreen;
   .review-cart-items {
+    font-size: 16px;
+    font-weight: 600;
     padding-top: 20px;
-    border-bottom: 2px solid #A5C727;
+    border-bottom: 2px solid @paymentEngineGreen;
     padding-bottom: 10px;
+    .list-unstyled li:last-child {
+      font-size: 14px;
+      font-weight: 600;
+      color: #747167;
+    }
+  }
+  .review-cart-total {
+    .cart-totals {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .leaders li {
+        font-weight: 800;
+        font-size: 18px;
+      }
+    }
   }
 }
 

@@ -22,12 +22,12 @@ block main-content
           | &nbsp;Back to search results
   .row.addon-row.addon-row-attached
     .col-sm-12
-      p
-        strong This list is for credit card and check payments. If you want to print the payroll donation list, go back to search results and choose "print list" from shopping cart.
+      p.lead
+        | This list is for credit card and check payments. If you want to print the payroll donation list, go back to search results and choose "print list" from shopping cart.
       br
       .review-header
-        p
-          .fa.fa-shopping-cart &nbsp;
+        p.payment-engine-heading
+          span.fa.fa-shopping-cart &nbsp;
           | Donation cart
     .col-sm-12
       .review-cart
@@ -100,9 +100,13 @@ block main-content
                   span $2,345.00
   .row.addon-row.addon-row-attached
     .col-sm-12
-      p * There will be a service fee added at the time of payment based on the type of the payment chosen.
+      p(style="padding-top:8px; padding-bottom: 45px;") * There will be a service fee added at the time of payment based on the type of the payment chosen.
     .col-sm-12
-      button.btn.btn-success Proceed to billing
+      p 
+        button.btn.btn-payment-engine Make payment
+      p 
+        a(href="#" data-toggle="modal" data-target="#paymentTypesModal") What are my payment options?
+      include paymentsModal
 block custom-js
   if production
     script(src="/js/custom.js")
