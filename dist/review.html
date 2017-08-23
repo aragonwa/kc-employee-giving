@@ -613,11 +613,9 @@
             </div>
             <div class="row addon-row addon-row-attached">
               <div class="col-sm-12">
-                <p><strong>This list is for credit card and check payments. If you want to print the payroll donation list, go back to search results and choose "print list" from shopping cart.</strong></p><br>
+                <p class="lead">This list is for credit card and check payments. If you want to print the payroll donation list, go back to search results and choose "print list" from shopping cart.</p><br>
                 <div class="review-header">
-                  <p>
-                    <div class="fa fa-shopping-cart">&nbsp;</div>Donation cart
-                  </p>
+                  <p class="payment-engine-heading"><span class="fa fa-shopping-cart">&nbsp;</span>Donation cart</p>
                 </div>
               </div>
               <div class="col-sm-12">
@@ -707,10 +705,35 @@
             </div>
             <div class="row addon-row addon-row-attached">
               <div class="col-sm-12">
-                <p>* There will be a service fee added at the time of payment based on the type of the payment chosen.</p>
+                <p style="padding-top:8px; padding-bottom: 45px;">* There will be a service fee added at the time of payment based on the type of the payment chosen.</p>
               </div>
               <div class="col-sm-12">
-                <button class="btn btn-success">Proceed to billing</button>
+                <p> 
+                  <button class="btn btn-payment-engine">Make payment</button>
+                </p>
+                <p> <a href="#" data-toggle="modal" data-target="#paymentTypesModal">What are my payment options?</a></p>
+                <div class="modal fade" id="paymentTypesModal" tabindex="-1" role="dialog" aria-labelledby="paymentTypesModalLabel">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                        <h4 class="modal-title" id="paymentTypesModalLabel">What are my payment options?</h4>
+                      </div>      
+                      <div class="modal-body">
+                        <h4>Make a donation now using a credit card or check</h4>        
+                        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.        </p>
+                        <h4>Make a donation through your next paycheck</h4>    
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>        
+                        <h4>Set up regular donations in Peoplesoft</h4>
+                        <p>
+                           Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                      </div>      
+                      <div class="modal-footer">
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row addon-row addon-row-transparent main-share-links">

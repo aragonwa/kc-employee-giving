@@ -7,6 +7,9 @@
 
 [kc-employee-giving.surge.sh/reviewPayroll](https://kc-employee-giving.surge.sh/reviewPayroll)
 # Updates 
+8/23
+* Updating styling per Beth
+
 8/3
 * Panels: Fixing height issue when no description is present
 * Fixing bug with modals and offcanvas cart
