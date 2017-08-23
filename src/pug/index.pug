@@ -18,7 +18,7 @@ block main-content
     include offcanvas-cart
   .row.addon-row.addon-row-attached
     .col-sm-12.col-md-8
-      p.h5 CURRENT FUNDRAISING EVENTS
+      p.payment-engine-heading Current fundraising events
       .row
         .employee-giving-events
           .col-sm-6.col-xs-12
@@ -53,8 +53,6 @@ block main-content
                   span.fa.fa-question-circle.fa-color-primary( data-toggle="modal" data-target="#eventsModal")
               p 
                 a(href="#" data-toggle="modal" data-target="#paymentTypesModal") What are my payment options?
-              include paymentsModal
-              include searchInput
               .dropdown
                 button.btn.btn-link.dropdown-toggle(id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
                   strong
@@ -87,6 +85,9 @@ block main-content
                     a(href="#") Status 4
                   li
                     a(href="#") Status 5
+              br
+              include paymentsModal
+              include searchInput
           .employee-giving-pagination
             include pagination
           .employee-giving-search-results-panels

@@ -245,7 +245,7 @@ button.onoffcanvas-toggler {
   padding: 15px 20px;
 }
 .cart .cart-title {
-  border-bottom: 2px solid #A5C727;
+  border-bottom: 6px solid #A5C727;
   padding: 5px 0;
   margin-top: 5px;
 }
@@ -299,7 +299,8 @@ ul.leaders {
   list-style: none;
 }
 ul.leaders li {
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
 }
 ul.leaders li:before {
   float: left;
@@ -318,7 +319,8 @@ ul.leaders span + span {
   background: #FFFFFF;
 }
 ul.leaders .description {
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 600;
   padding-bottom: 5px;
   color: #747167;
 }
@@ -348,7 +350,7 @@ ul.leaders .description:before {
 .employee-giving-events .employee-giving-event {
   border: 1px solid #264c5d;
   padding: 5px 10px;
-  margin-bottom: 0;
+  margin-bottom: 6px;
   color: #264c5d;
 }
 .employee-giving-events .employee-giving-event a .fa {
@@ -357,7 +359,7 @@ ul.leaders .description:before {
 .employee-giving-events .employee-giving-event.active {
   border: 1px solid #264c5d;
   padding: 5px 10px;
-  margin-bottom: 0;
+  margin-bottom: 6px;
   background-color: #264c5d;
   color: #FFFFFF;
 }
@@ -367,6 +369,10 @@ ul.leaders .description:before {
 .employee-giving-search {
   padding: 0;
   border: 1px solid #264c5d;
+}
+.employee-giving-search #employee-donation-panel-title {
+  font-size: 28px;
+  font-weight: 700;
 }
 .employee-giving-search img {
   border-bottom: 4px solid #264c5d;
@@ -382,7 +388,7 @@ ul.leaders .description:before {
   border-top: 1px solid #cccccc;
 }
 .employee-giving-pagination {
-  margin: 20px 0;
+  margin: 15px 0;
   padding-bottom: 5px;
 }
 .employee-giving-pagination .pagination {
@@ -393,20 +399,33 @@ ul.leaders .description:before {
   border-bottom: 4px solid #264c5d;
   padding-top: 20px;
 }
+.employee-giving-search-results-panels .panel-heading .panel-title p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.employee-giving-search-results-panels .panel-heading .panel-title p:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
 .employee-giving-donation-list {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 .employee-giving-donation-list .media:not(:last-child) {
   border-bottom: 1px dotted #cccccc;
 }
 .employee-giving-donation-list .cart-title {
-  border-bottom: 2px solid #264c5d;
+  border-bottom: 6px solid #264c5d;
 }
 .employee-giving-donation-list .cart-items {
+  font-size: 16px;
+  font-weight: 600;
   border-bottom: 2px solid #264c5d;
   margin-bottom: 20px;
 }
 .employee-giving-donation-list .cart-items li.description {
+  font-size: 14px;
+  font-weight: 600;
   color: #747167;
 }
 .cart .cart-items ul.leaders {
@@ -415,6 +434,11 @@ ul.leaders .description:before {
 .review-cart .review-cart-items .input-group {
   width: 200px;
   font-weight: 400;
+}
+.payment-engine-heading {
+  color: #4C4943;
+  font-weight: 800;
+  font-size: 18px;
 }
 .btn-custom {
   color: #000000;
@@ -456,6 +480,47 @@ fieldset[disabled] .btn-custom.active {
 .btn-custom .badge {
   color: #FFFFFF;
   background-color: #000000;
+}
+.btn-payment-engine {
+  color: #FFFFFF;
+  background-color: #5D7D39;
+  border-color: #c8c2b0;
+}
+.btn-payment-engine:hover,
+.btn-payment-engine:focus,
+.btn-payment-engine:active,
+.btn-payment-engine.active,
+.open .dropdown-toggle.btn-payment-engine {
+  color: #FFFFFF;
+  background-color: #446420;
+  border-color: #c8c2b0;
+}
+.btn-payment-engine:active,
+.btn-payment-engine.active,
+.open .dropdown-toggle.btn-payment-engine {
+  background-image: none;
+}
+.btn-payment-engine.disabled,
+.btn-payment-engine[disabled],
+fieldset[disabled] .btn-payment-engine,
+.btn-payment-engine.disabled:hover,
+.btn-payment-engine[disabled]:hover,
+fieldset[disabled] .btn-payment-engine:hover,
+.btn-payment-engine.disabled:focus,
+.btn-payment-engine[disabled]:focus,
+fieldset[disabled] .btn-payment-engine:focus,
+.btn-payment-engine.disabled:active,
+.btn-payment-engine[disabled]:active,
+fieldset[disabled] .btn-payment-engine:active,
+.btn-payment-engine.disabled.active,
+.btn-payment-engine[disabled].active,
+fieldset[disabled] .btn-payment-engine.active {
+  background-color: #5D7D39;
+  border-color: #c8c2b0;
+}
+.btn-payment-engine .badge {
+  color: #5D7D39;
+  background-color: #FFFFFF;
 }
 .addToCartModal .modal-body .agency-details {
   padding-top: 20px;
